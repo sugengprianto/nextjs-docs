@@ -1,5 +1,5 @@
 export default {
-  footer: <p>©Nextra.</p>,
+  footer: <p>©Nextra</p>,
   head: ({ title, meta }) => (
     <>
       {meta.description && (
