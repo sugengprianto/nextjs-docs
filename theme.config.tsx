@@ -1,11 +1,21 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
-
-const config: DocsThemeConfig = {
-  logo: <span>Blog Masyarakat</span>,
-  footer: {
-    text: 'Blog Masyarakat',
-  },
+export default {
+  footer: <p>©Nextra.</p>,
+  head: ({ title, meta }) => (
+    <>
+      {meta.description && (
+        <meta name="description" content={meta.description} />
+      )}
+      {meta.tag && <meta name="keywords" content={meta.tag} />}
+      {meta.author && <meta name="author" content={meta.author} />}
+    </>
+  ),
+  readMore: 'Selengkapnya →',
+  postFooter: null,
+  darkMode: false,
+  navs: [
+    {
+      url: 'https://github.com/shuding/nextra',
+      name: 'Nextra'
+    }
+  ]
 }
-
-export default config
